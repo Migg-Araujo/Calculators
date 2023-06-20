@@ -1,0 +1,60 @@
+body{
+    align-items: center;
+    background: linear-gradient(220deg,#DA22FF, #9733EE);
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    justify-content: center;
+    overflow-y: hidden;
+}
+h1{
+    position: absolute;
+    bottom: 90%;
+}
+.calc{
+    background-color: #FFFFFF3E;
+    border-radius: 30px;
+    width: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+.screen{
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 35px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 5% 5%;
+}
+.buttonsRow{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+}
+.button{
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    flex-basis: 20%;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 16px;
+    height: 65px;
+}
+.symbol{
+    background-color: #e7364d;
+    color: #ffffff;
+}
+.double{
+    flex-basis: 47%;
+}
+.triple{
+    flex-basis: 73%;
+}
+.button:hover{
+    background-color: #9733EE3e;
+    color: #000;
+}
