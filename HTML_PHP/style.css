@@ -1,9 +1,9 @@
 body{
     align-items: center;
-    background: linear-gradient(220deg,#DA22FF, #9733EE);
+    background: linear-gradient(90deg, #005C97, #363795);
     display: flex;
     min-height: 100vh;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-display: swap;
     justify-content: center;
     overflow-y: hidden;
@@ -27,6 +27,8 @@ h1{
     border-radius: 20px;
     width: 80%;
     margin: 5% 5%;
+    border: none;
+    font-family: inherit;
 }
 .buttonsRow{
     display: flex;
@@ -45,7 +47,7 @@ h1{
     height: 65px;
 }
 .symbol{
-    background-color: #e7364d;
+    background-color: #13a7a9;
     color: #ffffff;
 }
 .double{
@@ -55,6 +57,6 @@ h1{
     flex-basis: 73%;
 }
 .button:hover{
-    background-color: #9733EE3e;
+    background-color: #3637953e;
     color: #000;
 }
