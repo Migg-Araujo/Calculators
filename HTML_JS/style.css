@@ -1,60 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #100a1c;
+    color: #6cacc5;
+    background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
-    align-items: center;
-    background: linear-gradient(220deg,#DA22FF, #9733EE);
     display: flex;
-    min-height: 100vh;
-    font-family: 'Dosis', sans-serif;
-    font-display: swap;
+    flex-direction: row;
     justify-content: center;
-    overflow-y: hidden;
+    align-items: center;
+    text-align: center;
 }
+
 h1{
-    position: absolute;
-    bottom: 90%;
+    font-weight: lighter;
+    font-size: 60px;
 }
-.calc{
-    background-color: #FFFFFF3E;
-    border-radius: 30px;
-    width: 400px;
-    height: 540px;
-    padding: 20px 35px;
+
+p{
+    background: linear-gradient(45deg, #c97874, #00000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -10px;
 }
-.screen{
-    background-color: #ffffff;
-    text-align: right;
-    font-size: 35px;
-    padding: 20px;
-    border-radius: 20px;
-    width: 80%;
-    margin: 5% 5%;
-}
-.buttonsRow{
+
+.container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    margin: 5% 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.button{
-    color: #000000;
-    background-color: #ffffff;
+
+.calc{
+    padding-top: 100px;
+    width: 380px;
+}
+.calc-row{
+    display: flex; 
+}
+
+button{
     border: none;
-    flex-basis: 20%;
-    font-size: 24px;
-    font-family: inherit;
+    border-radius: 5px;
+    background: rgba(42, 50, 113, 0.28);
+    color: #6cacc5;
+    font-size: 30px;
     font-weight: bold;
-    border-radius: 16px;
+    width: 65px;
     height: 65px;
+    margin: 15px;
 }
-.symbol{
-    background-color: #e7364d;
-    color: #ffffff;
+
+.screen{
+    color: #c97874;
+    font-size: 30px;
+    font-weight: bold;
+    width: 255px;
+    height: 65px;
+    margin: 15px;
+    line-height: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: end;
 }
-.double{
-    flex-basis: 47%;
-}
-.triple{
-    flex-basis: 73%;
-}
-.button:hover{
-    background-color: #9733EE3e;
-    color: #000;
+
+button:hover{
+    background-color: #201E40;
 }

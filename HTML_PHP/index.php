@@ -53,11 +53,20 @@
     $cookie_value1 = '';
     $cookie_name2 = 'op';
     $cookie_value2 = '';
+    $expiration_time = time() - 3600;
+
+    setcookie($cookie_name1, $cookie_value1, $expiration_time, '/');
+    if(!isset($_COOKIE['num'])){
+        echo 'aaaaa';
+    }
 
     if(isset($_POST['num'])){
         $num = $_POST['input'].$_POST['num'];
+        $_COOKIE['num'] += $num;
     }else{
         $num = '';
     }
-    echo $num;
+
+    $sum = $_COOKIE['num'];
+    echo $sum;
 ?>

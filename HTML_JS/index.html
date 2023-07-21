@@ -1,50 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <title>Calc JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calc in JS</title>
 </head>
 <body>
-    <h1>Calculator on JavaScript</h1>
-    <div class="calc">
-        <section class="screen">
-            0
+    <section class="container">
+        <section class="title">
+            <h1>Calculator in JS</h1>
+            <p>Don't divide by zero</p>
         </section>
-        <section class="buttons">
-            <div class="buttonsRow">
-                <button class="button double">C</button>
-                <button class="button">&larr;</button>
-                <button class="button symbol">&divide;</button>
-            </div>
-            <div class="buttonsRow">
+            <section class="calc">
+            <section class='calc-row'>
+                <button class="button">C</button>
+                <div class="screen">0</div>
+            </section>
+            
+            <section class='calc-row'>
                 <button class="button">7</button>
                 <button class="button">8</button>
                 <button class="button">9</button>
-                <button class="button symbol">&times;</button>
-            </div>
-            <div class="buttonsRow">
+                <button class="button">&plus;</button>
+            </section>
+
+            <section class='calc-row'>
                 <button class="button">4</button>
                 <button class="button">5</button>
                 <button class="button">6</button>
-                <button class="button symbol">&minus;</button>
-            </div>
-            <div class="buttonsRow">
+                <button class="button">&minus;</button>
+            </section>
+
+            <section class='calc-row'>
                 <button class="button">1</button>
                 <button class="button">2</button>
                 <button class="button">3</button>
-                <button class="button symbol">&plus;</button>
-            </div>
-            <div class="buttonsRow">
-                <button class="button triple">0</button>
-                <button class="button symbol">&equals;</button>
-            </div>
+                <button class="button">&times;</button>
+            </section>
+
+            <section class='calc-row'>
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button">&equals;</button>
+                <button class="button">&divide;</button>
+            </section>
         </section>
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
