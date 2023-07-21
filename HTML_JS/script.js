@@ -28,12 +28,8 @@ function handleSymbol(symbol){
             buffer = runningTotal;
             runningTotal = 0;
             break;
-        case '←':
-            if(buffer.length === 1){
-                buffer = '0';
-            }else{
-                buffer = buffer.substring(0, buffer.length - 1);
-            }
+        case '.':
+            handleNumber(symbol);
             break;
         case '+':
         case '−':
@@ -49,7 +45,7 @@ function handleMath(symbol){
         return;
     }
 
-    const intBuffer = parseInt(buffer);
+    const intBuffer = parseFloat(buffer);
 
     if(runningTotal === 0){
         runningTotal = intBuffer;
@@ -69,6 +65,10 @@ function flushOperation(intBuffer){
         runningTotal *= intBuffer;
     }else if(previousOperator === '÷'){
         runningTotal /= intBuffer;
+    }
+    console.log(runningTotal);
+    if(runningTotal == "Infinity" || isNaN(runningTotal)){
+        runningTotal = "You Broke It!";
     }
 }
 
