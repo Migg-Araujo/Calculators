@@ -23,8 +23,9 @@ h1{
 
 p{
     background: linear-gradient(45deg, #c97874, #00000000);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 600;
     font-size: 20px;
     margin-top: -10px;
