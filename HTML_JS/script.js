@@ -29,7 +29,9 @@ function handleSymbol(symbol){
             runningTotal = 0;
             break;
         case '.':
-            handleNumber(symbol);
+            if(!buffer.includes('.')){
+                handleNumber(symbol);
+            }
             break;
         case '+':
         case '−':
@@ -45,7 +47,7 @@ function handleMath(symbol){
         return;
     }
 
-    const intBuffer = parseFloat(buffer);
+    let intBuffer = parseFloat(buffer);
 
     if(runningTotal === 0){
         runningTotal = intBuffer;
@@ -83,6 +85,7 @@ function handleNumber(numberString){
 function init(){
     document.querySelector('.calc').addEventListener('click', function(event){
         buttonClick(event.target.innerText);
+        console.log(buffer);
     })
 }
 
