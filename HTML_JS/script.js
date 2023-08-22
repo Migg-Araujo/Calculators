@@ -29,7 +29,9 @@ function handleSymbol(symbol){
             runningTotal = 0;
             break;
         case '.':
-            handleNumber(symbol);
+            if(!buffer.includes('.')){
+                handleNumber(symbol);
+            }
             break;
         case '+':
         case '−':
