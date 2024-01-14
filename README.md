@@ -9,7 +9,7 @@
 > ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 > ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 
-### Welcome 👋!
+###👋 Welcome 👋!
 This project have a objective to increase my abilities in all the programming languages i've learned, creating a calculator in all languages. 
 
 # JavaScript
